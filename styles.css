@@ -79,7 +79,7 @@ img {
     background-repeat: no-repeat;
     background-position: bottom -50px left, top -120px right;
     background-size: 10%, 27%;
-    height: 380px;
+    height: 480px;
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -115,7 +115,7 @@ img {
 .intro img {
     width: 410px;
     height: 430px;
-    margin: 70px 60px 0 0;
+    margin: 100px 60px 0 0;
 }
 
 button {
