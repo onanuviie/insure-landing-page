@@ -1,9 +1,10 @@
-* {
-    margin: 0;
-}
-
-body {
-    overflow-x: hidden;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-family: 'Karla', sans-serif;
 }
 
@@ -26,6 +27,13 @@ ul {
 img {
     width: 50px;
     height: 50px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    margin: auto 34px;
+    display: none;
 }
 
 .navbar {
@@ -104,7 +112,7 @@ img {
     font-size: 1rem;
 }
 
-img {
+.intro img {
     width: 410px;
     height: 430px;
     margin: 70px 60px 0 0;
@@ -193,7 +201,6 @@ button {
     background-repeat: no-repeat;
     background-position: 0 120%;
     background-size: 15%;
-    height: 380px;
 }
 
 .footer img {
@@ -216,15 +223,17 @@ button {
 }
 
 .footer-links {
+    width: 80vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 70px;
+    margin: 70px 0 0 120px;
     font-size: 0.85rem;
 }
 
 .footer-links div {
-    width: 370px;
-    margin: 0 20px 40px 140px;
+    width: 100px;
+    margin: 0 0 40px 0;
 }
 
 .footer-links ul {
@@ -240,3 +249,200 @@ button {
     color: hsl(270, 9%, 17%);
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -117%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(148, 138, 138);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+    .nav-branding {
+        font-size: 2.3rem;
+        margin: 1rem;
+    }
+
+    .plan h1 {
+        font-size: 2.3rem;
+    }
+
+    .intro {
+        background-image: url(../images/bg-pattern-intro-left-mobile.svg),
+                          url(../images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 39% left, top 100% right;
+        background-size: 40%, 39%;
+        height: 900px;
+        width: 100vw;
+        color: hsl(0, 0%, 98%);
+    }
+
+    .intro img {
+        width: 100vw;
+        height: 469px;
+        margin: 0;
+    }
+
+    .plan-container {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .plan {
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+    }
+
+    .plan-border {
+        display: none;
+    }
+
+    .info {
+        margin: 180px 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container {
+        margin-top: 30px;
+        width: 82vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .info-border {
+        margin-left: 30%;
+    }
+    
+    .info h2 {
+        font-size: 2rem;
+    }
+    
+    .info img {
+        width: 70px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    
+    .info h3 {
+        font-size: 1.3rem;
+    }
+
+    .info p {
+        font-size: 0.7rem;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .description-banner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(256, 26%, 20%);
+        background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 96% 27%;
+        background-size: 45%;
+        width: 65%;
+        height: 310px;
+    }
+
+    .description-banner h2 {
+        font-size: 1.9rem;
+    }
+
+    .description-banner-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .description-banner button {
+        margin: 0 auto;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        width: 100vw;
+        background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: top left 30%;
+    }
+
+    .footer-heading {
+        margin: 180px 0 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 70px 0 0 0;
+        font-size: 0.85rem;
+    }
+
+   .footer-links div {
+    margin: 0;
+   }
+
+   .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+
+   .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .list ul {
+    margin-top: 10px;
+   }
+
+}
