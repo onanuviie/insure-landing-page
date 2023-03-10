@@ -13,3 +13,9 @@ closeButton.addEventListener('click', () => {
     hamburger.classList.remove('active')
     navMenu.classList.remove('active')
 })
+
+navMenu.addEventListener('click',() => {
+    closeButton.classList.remove('active')
+    hamburger.classList.remove('active')
+    navMenu.classList.remove('active')
+})
