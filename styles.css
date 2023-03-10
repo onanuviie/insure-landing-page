@@ -18,6 +18,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -32,7 +33,14 @@ img {
 .hamburger {
     width: 30px;
     height: 30px;
-    margin: auto 34px;
+    margin: auto 3rem;
+    display: none;
+}
+
+.close {
+    width: 35px;
+    height: 35px;
+    margin: auto 3rem;
     display: none;
 }
 
@@ -53,17 +61,23 @@ img {
     gap: 60px;
 }
 
-#border {
-    color: hsl(270, 9%, 17%);
+.nav-menu button {
+    border: 1px solid hsl(256, 26%, 20%);
+    text-align: center;
+    margin-top: 0;
 }
 
-.border-container {
-    height: 45px;
-    width: 180px;
+.nav-menu button a {
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+.nav-list {
     display: flex;
-    justify-content: center;
+    width: 720px;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid  hsl(270, 9%, 17%);
+    margin-right: 90px;
 }
   
 .nav-branding {
@@ -254,17 +268,56 @@ button {
         display: block;
     }
 
+    .hamburger.active {
+        display: none;
+    }
+
+    .close.active {
+        display: block;
+    }
+
     .nav-menu {
-        position: fixed;
+        position: absolute;
         left: -117%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(148, 138, 138);
-        width: 100%;
+        background-color: hsl(256, 26%, 20%);
+        background-image: url(bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 99%;
+        width: 100vw;
+        height: 500px;
         text-align: center;
         transition: 0.3s;
-      }
+        padding: 0;
+    }
+
+    .nav-menu.active {
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 60px 0;
+    }
+
+    .nav-item a,
+    .nav-menu button a {
+        color: hsl(0, 0%, 98%);
+    }
+
+
+    .nav-menu button {
+        border: 1px solid hsl(0, 0%, 98%);
+    }
+
+    .nav-list {
+        display: list-item;  
+        margin: 0;
+    }
+
 
     .nav-branding {
         font-size: 2.3rem;
