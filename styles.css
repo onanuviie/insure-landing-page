@@ -16,6 +16,10 @@ h1, h2, h3 {
     color: hsl(273, 4%, 51%);
 }
 
+.nav-menu a:hover {
+    color: hsl(256, 26%, 20%);
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -65,11 +69,13 @@ img {
     border: 1px solid hsl(256, 26%, 20%);
     text-align: center;
     margin-top: 0;
-}
-
-.nav-menu button a {
     color: hsl(256, 26%, 20%);
     cursor: pointer;
+}
+
+.nav-menu button:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
 }
 
 .nav-list {
@@ -124,6 +130,11 @@ img {
 
 .plan p {
     font-size: 1rem;
+}
+
+.plan button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
 }
 
 .intro img {
@@ -209,6 +220,11 @@ button {
     margin: 0 170px 20px 0;
 }
 
+.description-banner button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+
 .footer {
     background-color: hsl(0, 0%, 98%);
     background-image: url(bg-pattern-footer-desktop.svg);
@@ -236,6 +252,10 @@ button {
     width: 300px;
 }
 
+.social-media img:hover {
+    background-color: hsl(256, 26%, 20%);
+}
+
 .footer-links {
     width: 80vw;
     display: flex;
@@ -261,6 +281,10 @@ button {
 
 .footer-links a {
     color: hsl(270, 9%, 17%);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -303,14 +327,14 @@ button {
         margin: 60px 0;
     }
 
-    .nav-item a,
-    .nav-menu button a {
+    .nav-item a{
         color: hsl(0, 0%, 98%);
     }
 
 
     .nav-menu button {
         border: 1px solid hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 98%);
     }
 
     .nav-list {
