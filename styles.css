@@ -74,8 +74,8 @@ img {
 
 .intro {
     background-color: hsl(256, 26%, 20%);
-    background-image: url(../images/bg-pattern-intro-left-desktop.svg),
-                      url(../images/bg-pattern-intro-right-desktop.svg);
+    background-image: url(bg-pattern-intro-left-desktop.svg),
+                      url(bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
     background-position: bottom -50px left, top -120px right;
     background-size: 10%, 27%;
@@ -174,7 +174,7 @@ button {
     justify-content: space-between;
     align-items: center;
     background-color: hsl(256, 26%, 20%);
-    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-image: url(bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
     background-position: 96% 27%;
     background-size: 45%;
@@ -197,7 +197,7 @@ button {
 
 .footer {
     background-color: hsl(0, 0%, 98%);
-    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-image: url(bg-pattern-footer-desktop.svg);
     background-repeat: no-repeat;
     background-position: top 20%;
     background-size: 40%;
@@ -276,8 +276,8 @@ button {
     }
 
     .intro {
-        background-image: url(../images/bg-pattern-intro-left-mobile.svg),
-                          url(../images/bg-pattern-intro-right-mobile.svg);
+        background-image: url(bg-pattern-intro-left-mobile.svg),
+                          url(bg-pattern-intro-right-mobile.svg);
         background-repeat: no-repeat;
         background-position: bottom 39% left, top 100% right;
         background-size: 40%, 39%;
@@ -363,7 +363,7 @@ button {
         justify-content: center;
         align-items: center;
         background-color: hsl(256, 26%, 20%);
-        background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+        background-image: url(bg-pattern-intro-right-mobile.svg);
         background-repeat: no-repeat;
         background-position: 96% 27%;
         background-size: 45%;
@@ -389,7 +389,7 @@ button {
 
     .footer {
         width: 100vw;
-        background-image: url(../images/bg-pattern-footer-mobile.svg);
+        background-image: url(bg-pattern-footer-mobile.svg);
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: top left 5%;
