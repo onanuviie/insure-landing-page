@@ -1,5 +1,5 @@
 # Insure Landing Page
-A landing page for an imaginary company called INSURE
+A responsive landing page for an imaginary company called INSURE
 
 ### Links
 
