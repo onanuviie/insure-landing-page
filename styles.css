@@ -92,10 +92,10 @@ img {
     margin-right: 90px;
 }
   
-.nav-branding {
-    font-size: 3rem;
-    margin: 3rem;
-    color: hsl(270, 9%, 17%);
+.nav-branding >img {
+    margin: 9.6rem;
+    height: 27px;
+    width: 108px;
 }
 
 .intro {
@@ -145,8 +145,8 @@ img {
 
 .intro img {
     width: 410px;
-    height: 430px;
-    margin: 100px 60px 0 0;
+    height: 500px;
+    margin: 120px 60px 0 0;
 }
 
 button {
@@ -349,9 +349,9 @@ button {
     }
 
 
-    .nav-branding {
-        font-size: 2.3rem;
-        margin: 1rem;
+    .nav-branding >img {
+        height: 20px;
+        margin: 2rem;
     }
 
     .plan h1 {
@@ -371,7 +371,7 @@ button {
 
     .intro img {
         width: 100vw;
-        height: 469px;
+        height: 539px;
         margin: 0;
     }
 
