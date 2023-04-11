@@ -114,6 +114,12 @@ img {
     color: hsl(0, 0%, 98%);
 }
 
+.intro img {
+    width: 410px;
+    height: 500px;
+    margin: 120px 60px 0 0;
+}
+
 .plan-container {
     display: flex;
     justify-content: space-between;
@@ -143,12 +149,6 @@ img {
 .plan button:hover {
     background-color: hsl(0, 0%, 98%);
     color: hsl(256, 26%, 20%);
-}
-
-.intro img {
-    width: 410px;
-    height: 500px;
-    margin: 120px 60px 0 0;
 }
 
 button {
@@ -295,7 +295,7 @@ button {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 725px) {
     .hamburger{
         display: block;
     }
@@ -322,7 +322,6 @@ button {
         width: 100vw;
         height: 500px;
         text-align: center;
-        transition: 0.3s;
         padding: 0;
     }
 
