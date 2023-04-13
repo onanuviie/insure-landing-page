@@ -241,10 +241,15 @@ button {
     background-size: 40%;
 }
 
-.footer img {
+.social-media img {
     width: 20px;
     height: 20px;
     margin: 0 0 0 10px;
+}
+
+.footer-brand >img {
+    height: 20px;
+    width: 100px;
 }
 
 .footer-heading {
@@ -491,10 +496,18 @@ button {
         text-align: center;
     }
 
+    .footer-brand >img {
+        height: 23px;
+        width: 60px;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+
     .social-media {
         display: flex;
         justify-content: center;
         width: 150px;
+        margin-bottom: 12px;
     }
 
     .footer-links {
